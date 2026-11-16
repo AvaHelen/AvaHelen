@@ -219,6 +219,21 @@
     margin-right: .6rem;
     vertical-align: .15em;
   }
+  /* small line icons */
+  .ico { width: 1em; height: 1em; flex: 0 0 auto; }
+  h2 .ico {
+    width: .82em;
+    height: .82em;
+    margin-right: .45rem;
+    color: var(--accent);
+    opacity: .9;
+    vertical-align: -.04em;
+  }
+  .theme-toggle .ico { width: .95em; height: .95em; margin-right: .4rem; vertical-align: -.12em; }
+  /* theme icon follows the active theme */
+  #ico-sun { display: none; }
+  [data-theme="dark"] #ico-moon { display: none; }
+  [data-theme="dark"] #ico-sun { display: inline-block; }
 
   h3 {
     font-size: 1rem;
@@ -435,6 +450,8 @@
     </nav>
 
     <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">
+      <svg id="ico-moon" class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.2 8.2 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>
+      <svg id="ico-sun" class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2.1M12 19.3v2.1M2.6 12h2.1M19.3 12h2.1M5.3 5.3l1.5 1.5M17.2 17.2l1.5 1.5M18.7 5.3l-1.5 1.5M6.8 17.2l-1.5 1.5"/></svg>
       <span id="theme-label">Dark mode</span>
     </button>
   </aside>
@@ -442,7 +459,7 @@
   <!-- ============ MAIN ============ -->
   <main id="main">
     <section id="about">
-      <h2><span class="idx">01</span>About Me</h2>
+      <h2><span class="idx">01</span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 20.5c.6-3.9 3.8-6.2 7.5-6.2s6.9 2.3 7.5 6.2"/></svg>About Me</h2>
       <p class="lede">
         I am reading for an <strong>MPhil in Linguistics and Language Science</strong> at the
         <a href="https://www.cam.ac.uk/">University of Cambridge</a> (2026–2027, expected), after
@@ -471,7 +488,7 @@
     </section>
 
     <section id="news">
-      <h2><span class="idx">02</span>News</h2>
+      <h2><span class="idx">02</span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5h11.5v12.5H5.8A1.8 1.8 0 0 1 4 16.2V5.5Z"/><path d="M15.5 9h2.7A1.8 1.8 0 0 1 20 10.8v5.4a1.8 1.8 0 0 1-1.8 1.8h-2.7"/><path d="M6.8 8.8h6M6.8 12h6M6.8 15.2h3.6"/></svg>News</h2>
       <ul class="news">
         <li><time datetime="2026-10">2026.10</time><span>Began my <strong>MPhil in Linguistics and Language Science</strong> at the University of Cambridge.</span></li>
         <li><time datetime="2026-04">2026.04</time><span>Presented <em>Impact of Discourse Markers on L2 Learners' Perception of Empathy in AI-Mediated Dialogues</em> at the <strong>4th International Conference on Language and Cultural Communication (ICLCC 2026)</strong>, Beijing, April 24–26.</span></li>
@@ -484,7 +501,7 @@
     </section>
 
     <section id="publications">
-      <h2><span class="idx">03</span>Publications</h2>
+      <h2><span class="idx">03</span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6.2C10.4 5.1 8.6 4.6 6 4.6H3.6v13h2.9c2.4 0 4.1.5 5.5 1.6 1.4-1.1 3.1-1.6 5.5-1.6h2.9v-13H18c-2.6 0-4.4.5-6 1.6Z"/><path d="M12 6.2v13"/></svg>Publications</h2>
 
       <article class="paper">
         <span class="venue">ICLCC 2026 · Accepted</span>
@@ -537,7 +554,7 @@
     </section>
 
     <section id="projects">
-      <h2><span class="idx">04</span>Research Projects</h2>
+      <h2><span class="idx">04</span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 3.5h5"/><path d="M10.5 3.5v5.2L5.9 17a2.1 2.1 0 0 0 1.8 3.1h8.6a2.1 2.1 0 0 0 1.8-3.1l-4.6-8.3V3.5"/><path d="M7.6 14.5h8.8"/></svg>Research Projects</h2>
 
       <div class="entry">
         <div class="item">
@@ -604,7 +621,7 @@
     </section>
 
     <section id="education">
-      <h2><span class="idx">05</span>Education</h2>
+      <h2><span class="idx">05</span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.8 9.2 12 5l9.2 4.2L12 13.4 2.8 9.2Z"/><path d="M6.4 11.2v4.4c0 1.6 2.5 2.9 5.6 2.9s5.6-1.3 5.6-2.9v-4.4"/></svg>Education</h2>
 
       <div class="entry">
         <div class="item">
@@ -640,7 +657,7 @@
     </section>
 
     <section id="experience">
-      <h2><span class="idx">06</span>Experience</h2>
+      <h2><span class="idx">06</span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.2" y="7.6" width="17.6" height="12" rx="2"/><path d="M9 7.6V6a1.6 1.6 0 0 1 1.6-1.6h2.8A1.6 1.6 0 0 1 15 6v1.6"/><path d="M3.2 12.6h17.6"/></svg>Experience</h2>
 
       <div class="entry">
         <div class="item">
@@ -693,7 +710,7 @@
     </section>
 
     <section id="honors">
-      <h2><span class="idx">07</span>Honors &amp; Awards</h2>
+      <h2><span class="idx">07</span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9.2" r="5.4"/><path d="M8.6 13.6 7.2 21l4.8-2.6L16.8 21l-1.4-7.4"/></svg>Honors &amp; Awards</h2>
       <table>
         <thead>
           <tr><th scope="col">Year</th><th scope="col">Award</th></tr>
@@ -708,7 +725,7 @@
     </section>
 
     <section id="skills">
-      <h2><span class="idx">08</span>Skills</h2>
+      <h2><span class="idx">08</span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7.2h6M14 7.2h6M4 16.8h10M18 16.8h2"/><circle cx="12" cy="7.2" r="2"/><circle cx="16" cy="16.8" r="2"/></svg>Skills</h2>
       <div class="grid-2">
         <table>
           <thead><tr><th scope="col">Languages</th><th scope="col">Level</th></tr></thead>
