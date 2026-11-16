@@ -1,0 +1,10 @@
+# Personal CV contains private contact details — do not publish
+ZHANG Hanwen CV.docx
+*.docx
+~$*
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
