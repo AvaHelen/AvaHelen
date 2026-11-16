@@ -1,10 +1,12 @@
-# Personal CV contains private contact details — do not publish
-ZHANG Hanwen CV.docx
-*.docx
-~$*
 
 # OS / editor noise
-.DS_Store
-Thumbs.db
-desktop.ini
+# Personal CV contains private contact details — do not publish
+*.docx
 *.swp
+.DS_Store
+.sass-cache/
+Thumbs.db
+ZHANG Hanwen CV.docx
+_site/
+desktop.ini
+~$*
